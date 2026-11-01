@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>사용 기간 V2 · 세로 타임라인</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../common.css">
+<style>
+:root{--brand:#6B1530;--brand2:#8A2A45;--ink:#24141A;--dark:#4A3A40;--gray:#7A6C71;--light:#A89BA0;--line:#EADFE2;--soft:#F7F4F4}
+.ctx-lab{font-size:11px;color:#A89BA0;background:#F1EEEF;padding:7px 20px;letter-spacing:.02em}
+.ctx-img{width:100%;display:block}
+section.life{padding:76px 20px 52px;background:#fff;text-align:center;overflow:hidden}
+.st{font-size:34px;font-weight:400;line-height:1.3;letter-spacing:-.03em;margin-bottom:10px;color:var(--ink)}
+.st strong{font-weight:800}
+.ss{font-size:14px;color:var(--gray);line-height:1.6;margin-bottom:28px}
+.nt{font-size:11.5px;color:var(--light);line-height:1.55;margin-top:12px;text-align:center}
+b{color:#111}
+
+
+.v2-head{display:grid;grid-template-columns:1fr 52px 1fr;align-items:end;margin-top:6px}
+.v2-head div{font-size:14.5px;font-weight:800;color:var(--ink);letter-spacing:-.02em;display:flex;flex-direction:column;align-items:center;gap:6px}
+.v2-head svg{width:26px;height:26px}
+.v2-tl{position:relative;display:grid;grid-template-columns:1fr 52px 1fr;margin-top:18px;height:372px}
+.v2-years{position:relative}
+.v2-years span{position:absolute;left:0;right:0;transform:translateY(-50%);font-size:12px;font-weight:600;color:#C9BEC2;transition:color .4s ease}
+.v2-lines{position:absolute;inset:0;pointer-events:none}
+.v2-lines i{position:absolute;left:0;right:0;height:1px;background:#F1ECEE}
+.v2-trk{position:relative}
+.v2-trk .rail{position:absolute;left:50%;top:0;width:4px;margin-left:-2px;height:var(--h);border-radius:4px;background:#EFE9EB}
+.v2-trk .fill{position:absolute;left:50%;top:0;width:4px;margin-left:-2px;height:var(--h);border-radius:4px;background:linear-gradient(180deg,#9A3456,var(--brand));transform:scaleY(0);transform-origin:top;transition:transform var(--d) linear .3s}
+.v2-trk .rest{position:absolute;left:50%;width:0;margin-left:-1px;border-left:2px dotted #DDD3D6;top:var(--h);bottom:0}
+.v2-trk .start{position:absolute;left:50%;top:0;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:var(--brand)}
+.v2-trk .end{position:absolute;left:50%;top:var(--h);width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;background:#fff;border:4px solid var(--brand);transform:scale(0);transition:transform .45s cubic-bezier(.34,1.56,.64,1) calc(var(--d) + .3s)}
+.v2-trk .pill{position:absolute;left:50%;top:var(--h);transform:translate(-50%,22px);opacity:0;white-space:nowrap;background:#24141A;color:#fff;font-size:14px;font-weight:800;padding:6px 14px;border-radius:99px;transition:opacity .5s ease calc(var(--d) + .45s),transform .5s ease calc(var(--d) + .45s)}
+.v2-tl.in .fill{transform:scaleY(1)}
+.v2-tl.in .end{transform:scale(1)}
+.v2-tl.in .pill{opacity:1;transform:translate(-50%,16px)}
+.v2-tl.in .v2-years span{color:var(--ink)}
+.v2-msg{margin-top:28px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 4px;font-size:14px;color:var(--dark);line-height:1.75;text-align:left}
+.v2-tl.in .v2-years span:nth-child(1){transition-delay:0.30s}.v2-tl.in .v2-years span:nth-child(2){transition-delay:0.78s}.v2-tl.in .v2-years span:nth-child(3){transition-delay:1.26s}.v2-tl.in .v2-years span:nth-child(4){transition-delay:1.74s}.v2-tl.in .v2-years span:nth-child(5){transition-delay:2.22s}.v2-tl.in .v2-years span:nth-child(6){transition-delay:2.70s}
+</style>
+</head>
+<body>
+<div class="tag">사용 기간 V2 · 세로 타임라인</div>
+<div class="ctx-lab">이전 섹션</div>
+<img class="ctx-img" src="../ctx_prev.jpg" alt="이전 섹션 미리보기">
+
+<section class="life">
+  <h2 class="st rv">고장은 없지만,<br><strong>오래 쓰면 닳아요</strong></h2>
+  <p class="ss rv">전원이 없는 밴드라 고장 날 곳은 없어요.<br>다만 옷처럼, 도트가 조금씩 닳습니다.</p>
+  <div class="v2-head rv">
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="#6B1530" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="M7.5 13.5h2M11 13.5h2M14.5 13.5h2M7.5 16.5h2M11 16.5h2M14.5 16.5h2"/></svg>매일 자주 착용</div>
+    <span></span>
+    <div><svg viewBox="0 0 24 24" fill="none" stroke="#6B1530" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="M8 15h2"/></svg>가끔 착용</div>
+  </div>
+  <div class="v2-tl rv">
+    <div class="v2-lines"><i style="top:0.0px"></i><i style="top:64.4px"></i><i style="top:128.8px"></i><i style="top:193.2px"></i><i style="top:257.6px"></i><i style="top:322.0px"></i></div>
+    <div class="v2-trk" style="--h:128.8px;--d:1s"><i class="rail"></i><i class="rest"></i><i class="fill"></i><i class="start"></i><i class="end"></i><span class="pill">약 2년</span></div>
+    <div class="v2-years"><span style="top:0.0px">0</span><span style="top:64.4px">1년</span><span style="top:128.8px">2년</span><span style="top:193.2px">3년</span><span style="top:257.6px">4년</span><span style="top:322.0px">5년</span></div>
+    <div class="v2-trk" style="--h:322px;--d:2.4s"><i class="rail"></i><i class="fill"></i><i class="start"></i><i class="end"></i><span class="pill">최대 5년</span></div>
+  </div>
+  <p class="v2-msg rv">도트가 닳으면 온기가 줄어들 수 있어요. 매일 쓰신다면 <b>2년쯤 뒤 재구매</b>를 권하고, 도트가 손상된 것 같다면 고객센터로 문의해 주세요.</p>
+  <p class="nt">사용 기간은 브랜드 안내 기준이며, 사용 빈도와 관리 상태에 따라 다릅니다.</p>
+</section>
+
+<div class="ctx-lab">다음 섹션</div>
+<img class="ctx-img" src="../ctx_next.jpg" alt="다음 섹션 미리보기">
+<script src="../../common.js"></script>
+
+</body>
+</html>

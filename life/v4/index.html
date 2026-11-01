@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>사용 기간 V4 · 두 개의 숫자 카드</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../common.css">
+<style>
+:root{--brand:#6B1530;--brand2:#8A2A45;--ink:#24141A;--dark:#4A3A40;--gray:#7A6C71;--light:#A89BA0;--line:#EADFE2;--soft:#F7F4F4}
+.ctx-lab{font-size:11px;color:#A89BA0;background:#F1EEEF;padding:7px 20px;letter-spacing:.02em}
+.ctx-img{width:100%;display:block}
+section.life{padding:76px 20px 52px;background:#fff;text-align:center;overflow:hidden}
+.st{font-size:34px;font-weight:400;line-height:1.3;letter-spacing:-.03em;margin-bottom:10px;color:var(--ink)}
+.st strong{font-weight:800}
+.ss{font-size:14px;color:var(--gray);line-height:1.6;margin-bottom:28px}
+.nt{font-size:11.5px;color:var(--light);line-height:1.55;margin-top:12px;text-align:center}
+b{color:#111}
+
+
+.v4-cards{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:4px}
+.v4-c{border-radius:20px;padding:20px 16px 18px;text-align:left;position:relative;overflow:hidden}
+.v4-c.dk{background:#24141A;color:#fff}
+.v4-c.lt{background:var(--soft);color:var(--ink)}
+.v4-lab{display:inline-block;font-size:12px;font-weight:700;border-radius:99px;padding:4px 11px;letter-spacing:-.01em}
+.dk .v4-lab{border:1px solid rgba(255,255,255,.45);color:#fff}
+.lt .v4-lab{border:1px solid #24141A;color:#24141A;background:#fff}
+.v4-num{margin-top:22px;display:flex;align-items:baseline;gap:3px;line-height:1}
+.v4-num small{font-size:15px;font-weight:700;margin-right:3px}
+.v4-num strong{font-size:76px;font-weight:800;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.v4-num span{font-size:22px;font-weight:700}
+.dk .v4-num small{color:rgba(255,255,255,.7)}
+.lt .v4-num small{color:var(--gray)}
+.v4-seg{margin-top:20px;display:grid;grid-template-columns:repeat(5,1fr);gap:4px}
+.v4-seg i{height:6px;border-radius:3px;position:relative;overflow:hidden}
+.dk .v4-seg i{background:rgba(255,255,255,.14)}
+.lt .v4-seg i{background:#E6DFE1}
+.v4-seg i::after{content:"";position:absolute;inset:0;background:#B2456A;transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
+.lt .v4-seg i::after{background:var(--brand)}
+.v4-seg i:not(.on)::after{display:none}
+.v4-cards.in .v4-seg i::after{transform:scaleX(1)}
+.v4-ax{display:flex;justify-content:space-between;margin-top:6px;font-size:10.5px}
+.dk .v4-ax{color:rgba(255,255,255,.45)}
+.lt .v4-ax{color:var(--light)}
+.v4-c .dotbg{position:absolute;right:-18px;top:-18px;width:110px;height:110px;opacity:.16;background-image:radial-gradient(circle,#B2456A 3.2px,transparent 3.6px);background-size:14px 14px}
+.lt .dotbg{opacity:.12;background-image:radial-gradient(circle,#6B1530 3.2px,transparent 3.6px)}
+.v4-msg{margin-top:12px;border:1px solid var(--line);border-radius:20px;padding:18px 18px;text-align:left;display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:start}
+.v4-ic{width:40px;height:40px;border-radius:50%;background:var(--soft);display:flex;align-items:center;justify-content:center}
+.v4-ic svg{width:22px;height:22px}
+.v4-msg p{font-size:13.5px;color:var(--dark);line-height:1.7}
+
+</style>
+</head>
+<body>
+<div class="tag">사용 기간 V4 · 두 개의 숫자 카드</div>
+<div class="ctx-lab">이전 섹션</div>
+<img class="ctx-img" src="../ctx_prev.jpg" alt="이전 섹션 미리보기">
+
+<section class="life">
+  <h2 class="st rv">고장은 없지만,<br><strong>오래 쓰면 닳아요</strong></h2>
+  <p class="ss rv">전원이 없는 밴드라 고장 날 곳은 없어요.<br>다만 옷처럼, 도트가 조금씩 닳습니다.</p>
+  <div class="v4-cards rv" id="v4c">
+    <div class="v4-c dk"><i class="dotbg"></i><span class="v4-lab">매일 자주 착용</span>
+      <div class="v4-num"><small>약</small><strong data-to="2">0</strong><span>년</span></div>
+      <div class="v4-seg"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></div>
+      <div class="v4-ax"><span>0</span><span>5년</span></div></div>
+    <div class="v4-c lt"><i class="dotbg"></i><span class="v4-lab">가끔 착용</span>
+      <div class="v4-num"><small>최대</small><strong data-to="5">0</strong><span>년</span></div>
+      <div class="v4-seg"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div>
+      <div class="v4-ax"><span>0</span><span>5년</span></div></div>
+  </div>
+  <div class="v4-msg rv"><span class="v4-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#6B1530" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/><path d="M20 19c0 1.5-1.5 2.5-4 2.5h-2"/></svg></span><p>도트가 닳으면 온기가 줄어들 수 있어요. 매일 쓰신다면 <b>2년쯤 뒤 재구매</b>를 권하고, 도트가 손상된 것 같다면 고객센터로 문의해 주세요.</p></div>
+  <p class="nt">사용 기간은 브랜드 안내 기준이며, 사용 빈도와 관리 상태에 따라 다릅니다.</p>
+</section>
+
+<div class="ctx-lab">다음 섹션</div>
+<img class="ctx-img" src="../ctx_next.jpg" alt="다음 섹션 미리보기">
+<script src="../../common.js"></script>
+<script>
+(function(){
+  var box=document.getElementById('v4c');
+  var st=document.createElement('style');var css='';for(var k=0;k<5;k++){css+='.v4-cards.in .v4-seg i:nth-child('+(k+1)+')::after{transition-delay:'+(.5+k*.32)+'s}'}st.textContent=css;document.head.appendChild(st);
+  function count(el){var to=+el.dataset.to,dur=to*320+300,s=null;
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches){el.textContent=to;return}
+    function f(ts){if(!s)s=ts;var p=Math.min((ts-s)/dur,1);el.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+  var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){setTimeout(function(){box.querySelectorAll('strong[data-to]').forEach(count)},350);io.disconnect()}},{threshold:.3});io.observe(box);
+  window.__v4final=function(){box.querySelectorAll('strong[data-to]').forEach(function(e){e.textContent=e.dataset.to})};
+})();
+</script>
+</body>
+</html>
